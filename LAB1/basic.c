@@ -17,7 +17,7 @@ while (true) {
     printf("a + b = %d\n", a + b);
     printf("a - b = %d\n", a - b);
     printf("a * b = %d\n", a * b);
-    printf("b / a = %d\n", b / a);
+    printf("a / b = %d\n", a / b);
     printf("b %% a = %d\n", b % a);
 
     // Relational operators
@@ -62,7 +62,7 @@ while (true) {
     printf("p & q = %d\n", p & q); // Bitwise AND
     printf("p | q = %d\n", p | q); // Bitwise OR
     printf("p ^ q = %d\n", p ^ q); // Bitwise XOR
-    printf("~p = %d\n", ~p);       // Bitwise NOT
+    printf("p = %d\n", ~p);       // Bitwise NOT
     printf("q << 1 = %d\n", q << 1); // Left shift
     printf("q >> 1 = %d\n", q >> 1); // Right shift
 

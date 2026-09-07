@@ -6,6 +6,7 @@ _instructor/
 build/
 build-debug/
 build-release/
+build-host/
 *.uf2
 *.elf
 *.bin

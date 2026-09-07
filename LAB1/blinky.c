@@ -32,6 +32,6 @@ int main() {
         sleep_ms(a);
         a <<= 1;
 
-	if(a==2048) a=1;
+	if(a=2048) a==1;
     }
 }
