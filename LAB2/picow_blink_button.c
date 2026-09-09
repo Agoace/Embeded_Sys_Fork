@@ -16,6 +16,7 @@
 
 const uint BTN_PIN = 20;
 const uint LED_PIN = 15;
+uint state = 0;
 
 int main() {
     stdio_init_all();
@@ -31,12 +32,13 @@ int main() {
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
     while (true) {
-        if(gpio_get(BTN_PIN))
-        {
-            gpio_put(LED_PIN, 1);
+        if (gpio_get(BTN_PIN)) {
+            state ^= 1;
+            gpio_put(LED_PIN, state);
             sleep_ms(250);
+        } else {
+            state = 0;
             gpio_put(LED_PIN, 0);
-            sleep_ms(250);
         }
     }
 }
